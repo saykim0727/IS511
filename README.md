@@ -1,6 +1,6 @@
 # Detecting Mining Script on Web Browser
 
-## explain our github
+## Explain our github
 - meeting dir : has our meeting data(ex. pdf, ppt, doc, ...)
 - paper : has our project result file.
 - reference : has useful paper to use reference
