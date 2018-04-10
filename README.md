@@ -3,7 +3,7 @@
 ## explain out git hub
 - meeting dir : has our meeting data(ex. pdf, ppt, doc, ...)
 - paper : has our project result file.
-- reference : has useful paper or to use a reference in our paper
+- reference : has useful paper to use reference
 
 ## Goal
 - Analyze a cryptojacking script to check what they do.
