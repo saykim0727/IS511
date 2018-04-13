@@ -15,7 +15,7 @@ However, if a user executes a mining program in his local computers, his compute
 So, many people thought a way how to mine without damaging to their computers.
 As services like CoinHive are made, many sites have consisted of web-based mining codes to use a visitor's computer resource.
 Using these services, web administrator involved a javascript mining code instead of advertisement or hide a javascript mining code to run in the background.
-Visitors can't know that the web administrator uses thier computer resources to mine a cryptocurrency in visitors computer.
+Visitors can't know that the web administrator uses their computer resources to mine a cryptocurrency in visitors computer.
 Because some people thought that the web mining services were morally problematic, several programs are made to detect and prevent these situations.
 However, most of the programs detect javascript mining code based on blacklists that have some specific domain.
 This way is practically impossible to prevent mining codes because most of web administrators can bypass the anti programs.
