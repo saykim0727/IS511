@@ -1,0 +1,51 @@
+Nocoin(https://github.com/keraf/NoCoin) - 822
+- Black list 기반
+ 1. 158개의 블랙리스트 도메인
+ 2. runblock 함수에서 블랙리스트를 가지고 블록킹하는듯함(background.js)
+ 3. optional white list
+- Chrome, Firefox, Opera plugin
+
+minerBlock(https://github.com/xd4rker/MinerBlock) - 159
+- Black list 기반
+ 1. 370개의 블랙리스트 도메인
+ 2. optional white list
+- Mining behaviour 기반
+ 1. Execute the srcipt on proxy server
+ 2. CoinHive, Mineralt code check(minerkill.js)
+   - Miner !='undefined' & Miner.isRunning =='function' & Miner.stop== 'function'
+     & (Miner._siteKey == 'string' || Miner.newSiteKEy == 'string')
+     than detect CoinHive code!(has 91% code coverage on web site)
+   - Miner !='undefined' & Miner.db =='function' & Miner.getlf == 'function'
+     & Miner._stop == 'function' & Miner.hps == 'function'
+     than detect Mineralt code!(new script code, is realeased CoinHive alternative 2017.11)
+- Chrome, Firefox, Opera plugin
+
+Coin-Hive Blocker(https://github.com/andreas0607/CoinHive-blocker) - 135
+- Superlight script that removes coin-hive from all websites. The script both cancels all requests from coinhive and removes the script from the DOM before it loads.
+- Black list 기반
+  1. 1229개의 블랙리스트 도메인
+  2. optional white list
+- CPU 사용량 기반
+  1. CPU 사용량을 인터벌간격으로 체크하여 특정 사용량 이상으로 CPU가 특정 카운트 이상 동작하고 있는지를 탐지
+- Chrome plugin
+
+Anti miner(https://github.com/unkn0wn404/MinerBlocker) - 73
+- Black list 기반
+  1. 21개의 블랙리스트 도메인
+  2. optional white list
+- Chrome plugin
+
+Nominers(https://github.com/Shaa3/nominers) - 10
+- Black list 기반
+ 1. 43개의 블랙리스트 도메인
+ 2. runblock 함수에서 블랙리스트를 가지고 블록킹하는듯함(background.js)
+- Firefox plugin
+
+---
+질문
+1. 계속해서 크롤링해서 우리가 모든 사이트의 자바스크립트를 분석하여 스스로 블랙리스트를 추가하는 방법은 어떨까?
+---
+프로그램 구현
+1. blacklist 체크하고 network안되면 로컬 blacklist체크함
+2. 동적 code 분석
+3. 주기적인 cpu 사용량 체크
