@@ -1,0 +1,76 @@
+- introduction
+예전부터 사람들은 다른 사람들의 비밀스러운 개인 정보를 해킹을 통하여 얻고, 이를 블랙마켓에 팔아 돈을 벌었다.
+예를들어 2016년 인터넷을 폭풍으로 몰아 넣은 미라이 봇넷은 IOT기기를 감염시키고 이를 이용하여 DDOS 공격을 수행하였다. 추후에 미라이 봇넷을 이용한 많은 다른 바이러스가 등장하였다[1-2].
+이렇게 봇넷을 이용하여 공격을 하는 사람이 있는 반면, 봇넷을 필요한 사람에게 대여해줌으로써 이익을 취하는 사람들도 존재하였다[1-3].
+2005년 Trojan.Gpcoder을 시작으로 최근 2017 워너크라이나 스캐럽 처럼 계속해서 이슈가 되고있는 랜섬웨어는
+사용자들의 pc를 사용할 수 없게 하거나 존재하는 모든 파일들을 암호화시키고 이를 복호화해주는 대가로 pc 사용자에게 돈을 받아내는 바이스러다[1-1].
+최근에는 암호화폐가 이슈화 되기 시작했고 공격자들은 암호화폐로 눈을 돌렸다.
+암호화폐는 2009 사토시 나카모토가 만든 비트코인을 출발로 이더리움이나 리플, 라이트코인 등이 잇따라 등장하기 시작하였다.
+암호화폐는 블록체인이라는 암호학 기술을 바탕으로 중앙집권화된 주체가 없이 설계되어있는 알고리즘대로 만들어진 디지털화폐다[2].
+The mining process is called Proof-of-work.
+The goal of ‘proof-of-work’ is finding nonce value which makes required zero-bits after hashing.
+By incrementing nonce in the block, they calculate iteratively to find the value gives the block’s hash the required zero bits.
+Also the cryptocurrency is a platform supporting electronic transactions without relying on trusted third party.
+All transactions are announced to the public, all users guarantee the transaction is valid.
+So users can minimize the fee and the speed of transaction get fast.
+암호화폐 지갑의 실제 주인을 찾기가 어렵기 때문에 은행계좌랑 다르게 익명성이 보존된다는 장점이 있고
+실제 은행 시스템과 다르게 서드파티가 필요하지 않기 때문에 중간 수수료가 없고 속도 세계 어느 곳이든 거래가 가능하며 속도가 빠르다. 또한 모든 거래가 공개되어 있기에 거래의 투명성이 보장된다.
+이러한 이유로 암호화폐가 유행하게 되면서 많은 사람들은 이익을 위해서 각자의 자신의 컴퓨터에서 채굴 프로그램을 이용하여 암호화폐를 채굴하기 시작하였다.
+그런데 채굴을 하게되면 cpu와 gpu 등 컴퓨터 자원을 full로 사용하게 되는데 이때 문제점이 발생하게된다.
+만약 cpu와 gpu를 풀로 사용하게 되면 열기가 심하게 나오는데, 이러한 열기로 인해 컴퓨터가 빠르게 디그레이드 될 수 있고, 전원 공급 장치의 파워가 약한 경우 IC가 손상 될 수 있기 때문이다.
+그렇기 때문에 컴퓨터 전문가들은 데스크탑이나 노트북에서 채굴을 하지 말라고 경고한다.
+전문가들의 충고를 듣고, 사람들은 자신의 컴퓨터 자원을 사용하지 않고 채굴을 할 수 있는 찾게 된다.
+그 때 나온 것이 웹에서 다른 사람의 컴퓨터 자원을 이용하여 채굴을 할 수 있게 해주는 자바스크립트 웹 마이닝 코드이다.
+제일 처음 나온 웹 마이닝 코드는 2011년에 나온 jsminer, bitcoin plus로 광고 대신에 암호화폐 채굴을 하자는 취지에서 나왔지만 채굴하는 속도가 느려서 사람들이 많이 사용하지 않았다.[a first look at]
+그런데 2017년에 나온 coinhive는 cpu를 이용한 채굴에 적합한 모네로를 채굴하기 때문에 사용자들에게 많은 관심을 받았고 실제로 많은 사람들이 웹 서버에 이를 올리고 사람들 몰래 암호화폐를 사용자 자원으로 채굴하기 시작했다.
+사실 웹에서 웹 방문자의 컴퓨터에서 채굴한다는 것에 대한 채굴 동의서를 받고 채굴을 하게되면 불법이 아니지만, 대부분의 웹 사이트는 백그라운드에서 몰래 채굴을 하고 있기 때문에 문제가 되고있다.[What is CoinHive]
+심지어는 어떤 웹사이트는 동의서를 띄운 후 클릭재킹을 통해서 이를 무력화 시키기도 한다.[a first lok at]
+이러한 웹 기반 마이닝 코드를 막기 위한 프로그램으로 Nocoin[4], MinerBlock[5], Coin-Hive Blocker[6] 등이 존재한다.
+이런 안티 마이닝 프로그램은 크롬이나 파이어폭스 같은 웹 브라우져에 플러그인으로 개발되었으며, 실시간으로 사용자가 방문한 사이트의 마이닝 코드들을 탐지해준다.
+위의 플러그인들은 블랙리스트 기반으로 Nocoin은 158개의 도메인이, Coin-Hive Blocker는 1229개의 도메인이 존재하며 대다수가 최소 100개 이상의 블랙 리스트 도메인이 존재한다.
+MinerBlock 플러그인은 블랙리스트 도메인뿐만 아니라 마이닝에 사용되는 특정 돔 엘리먼트까지 블랙리스트로 추가하여 마이닝 사이트를 탐지하며, Coin-Hive Blocker에서는 CPU 사용량을 체크하여 마이닝 사이트를 탐지하기도 한다.
+하지만 이러한 플러그인으로 마이닝 코드를 감지하기에는 부족한 점이 존재한다.
+기본적으로 블랙리스트 도메인을 바탕으로 마이닝 사이트를 체크하기 때문에 블랙리스트에 존재하지 않는 도메인을 이용할 경우 간단하게 우회가 가능하다.
+마찬가지로 블랙리스트 돔 엘리먼트나 CPU 사용량도 충분히 우회가 가능하며 이는 챕터xx에서 자세히 다루겠다.
+따라서 좀 더 다양한 마이닝 사이트로부터 방어하기 위해 우리의 프로그램은 기본적으로 우리가 분석한 도메인들을 블랙리스트로 만들고
+분석을 통해 얻어낸 다양한 돔 엘리먼트를 동적 분석을 통해 체크하며 주기적으로 타당한 근거를 둔 기준치의 CPU 사용량을 넘는지를 확인할 것이다.
+또한 추가적으로 우회를 힘들게 하기위하여 자바스크립트 마이닝 코드의 이벤트 로그를 모아 분석하고 특정 특징을 추출하고, 이와 같은 특징이 사이트에 존재하는지도 비교를 하여 탐지할 계획이다.
+결과적으로 우리는 기존의 존재하는 여러 안티 마이닝 플러그인보다 훨씬 강력한 플러그인을 제안한다.
+
+From long ago, people get users personal secret information by hacking and get profits by selling them.
+For example, in 2016, Mirai botnet that composed primarily of embedded and IoT devices infects others IoT devices and performs DDOS attack. and a number of botnet is made like Mirai[1-2].
+On the other hand, some people get a profit by lending their botnet to someone who need them[1-3].
+Also, Ransomware, which has been a hot issue in recent years such as Trojan.Gpcoder in 2005 and recent 2017 WannaCry or Scarab, break users computer down or encrypt all files and get a profit from users by decrypting encrypted files.[1-1]
+In recent years, the cryptocurrency has become an issue, so they foucs on the cryptocurrency.
+Starting with Bitcoin of Satoshi Nakamoto in 2009, many the cryptocurrency is made by programer like Ethereum, Ripple, Litecoin, and so one.
+Th cryptocurrency is electronic currency mined by algorithms using blockchain based on cryptology.
+The mining process is called Proof-of-work.
+The goal of ‘proof-of-work’ is finding nonce value which makes required zero-bits after hashing.
+By incrementing nonce in the block, they calculate iteratively to find the value gives the block’s hash the required zero bits.
+the cryptocurrency is a platform supporting electronic transactions without relying on trusted third party.
+All transactions are announced to the public, all users guarantee validation of transaction.
+So users can transact all over the world with minimize a fee and the speed of transaction get fast[2-1].
+Besides, the cryptocurrency wallet has advantage, against general bank account.
+Bank account directly linked to the owner’s physical identity but the cryptocurrency wallet can be generated anytime.
+So, it is difficult to find real owner from digital wallet[2-2].
+As the cryptocurrency become popular for this reason, many people have mined the cryptocurrency by using the mining programs to make a progit in their computers.
+However, their computers have a problem while the mining programs working with a computer resources which are CPU, GPU, and so on.
+Because a heat which is made by the computer resources have a bad effect on a computers like IC damage or processing speed down[3].
+Therefore some computer expert give a warning that people should not mine the cryptocurrency in desktop or labtop.
+After taking the advice, the people found ways to do mining without the problems.
+For these reason, a web-based javascript mining codes which mine the cryptocurrency using visitor computer resources on website are developed
+The first javascript mining codes were Jsminer and Bitcoin-plus In 2011.
+they were developed to mine the cryptocurrency instead of advertisement, but they were not used often because they were slow[7].
+CoinHive, which was developed In 2017, is suitable for CPU because it mines Monero.
+Thus, it has been used by many people on their website to mine Monero using visitor resources.
+Actually, it is illgal that web administrator mines cryptocurrency using visitor's computer resources without their agreement.
+However. most of sites cheat visitors to mine using clickjacking or mine in background secretly.
+To detect these sites, several anti mining programs were developed like Nocoin[4], MinerBlock[5], Coin-Hive Blocker[6].
+these programs are extension in Chrome or Firefox and detect malicious mining sites based on blacklist which have at least 100 domain urls in real-time.
+MinerBlock not only domains blacklist, but also checks DOM element to detect mining sites. Also Coin-Hive Blocker check CPU usage.
+However, these extensions have problems to detect mining sites.
+They basically check the mining site based on the blacklist, so some computer experts can bypass them simply by using a domain that is not in the blacklist.
+Also, the experts can bypass the Dom blacklist and CPU usage inspection. So we will explain in detail in chapter 3
+To prevent a lot of sites from mining, we will develop Chrome extension with domains blacklist that we collected.
+Also, our extension will check DOM elements with dynamic analysis and monitor if CPU usage is exceeded.
+As a result, we propose more powerful extension than existing others.
