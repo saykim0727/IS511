@@ -9,13 +9,13 @@
 이런 방법은 대부분이 우회가 가능하기 때문에 실질적으로 마이닝 코드를 막기 힘들다.
 따라서 우리는 동적 분석 및 여러 기술을 이용하여 최대한 많은 마이닝 코드를 막을 수 있게 하는 프로그램을 개발할 것이다.
 
-As a cryptocurrency comes up, a lot of people started a cryptocurrency mining by using mining program in their computers.
-However, if a user executes a mining program in his local computer, his computer are overloaded by using CPU, GPU and so on.
+As a cryptocurrency comes up, a lot of people started the cryptocurrency mining by using a mining programs in their computers.
+However, if a user executes the mining programs in his local computer, his computer are overloaded by using CPU, GPU and so on.
 So, many people thought a way how to mine without damaging their computers.
 As services like CoinHive are made, many sites have consisted of web-based mining codes to use a visitor's computer resources.
 Using these services, web administrator involved a javascript mining code instead of advertisement or hide a javascript mining code to run in background.
-Visitors can't know that the web administrator uses their computer resources to mine a cryptocurrency in visitors computer.
+Visitors can't know that the web administrator uses their computer resources to mine the cryptocurrency in visitors computer.
 Because some people thought that the web mining services were morally problematic, several programs are made to detect and prevent these services.
-However, most of the programs detect javascript mining code based on blacklist that have some specific domain.
-This way is practically impossible to prevent mining codes because most of web administrators can bypass the anti mining programs.
-So we suggest a practical program to prevent mining code on web browser and a way to detect malicious codes by analyzing them.
+However, most of the programs detect javascript mining code based on blacklist which have some specific domain.
+This way is practically impossible to prevent mining codes, because most of web administrators can bypass a anti mining programs.
+So we suggest a practical programs to prevent mining code on web browser and a way to detect malicious codes by analyzing them.
