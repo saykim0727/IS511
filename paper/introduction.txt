@@ -73,7 +73,7 @@ these programs are extension in Chrome or Firefox and detect malicious mining si
 MinerBlock not only domains blacklist, but also checks DOM element to detect mining sites. Also Coin-Hive Blocker check CPU usage.
 However, these extensions have problems to detect mining sites.
 They basically check the mining site based on the blacklist, so some computer experts can bypass them simply by using a domain that is not in the blacklist.
-Also, the experts can bypass the Dom blacklist and CPU usage inspection. So we will explain in detail in chapter 3
+Also, the experts can bypass the Dom blacklist and CPU usage inspection. So we will explain in detail in chapter 3.
 To prevent a lot of sites from mining, we will develop Chrome extension with domains blacklist that we collected.
 Also, our extension will check DOM elements with dynamic analysis and monitor if CPU usage is exceeded.
 As a result, we propose more powerful extension than existing others.
