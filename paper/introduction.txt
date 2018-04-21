@@ -38,9 +38,9 @@ MinerBlock 플러그인은 블랙리스트 도메인뿐만 아니라 마이닝�
 결과적으로 우리는 기존의 존재하는 여러 안티 마이닝 플러그인보다 훨씬 강력한 플러그인을 제안한다.
 
 From long ago, people get users personal secret information by hacking and get profits by selling them.
-For example, in 2016, Mirai botnet that composed primarily of embedded and IoT devices infects others IoT devices and performs DDOS attack. and a number of botnet is made like Mirai[1-2].
-On the other hand, some people get a profit by lending their botnet to someone who need them[1-3].
-Also, Ransomware, which has been a hot issue in recent years such as Trojan.Gpcoder in 2005 and recent 2017 WannaCry or Scarab, break users computer down or encrypt all files and get a profit from users by decrypting encrypted files.[1-1]
+For example, in 2016, Mirai botnet that composed primarily of embedded and IoT devices infects others IoT devices and performs DDOS attack. and a number of botnet is made like Mirai[1].
+On the other hand, some people get a profit by lending their botnet to someone who need them[2].
+Also, Ransomware, which has been a hot issue in recent years such as Trojan.Gpcoder in 2005 and recent 2017 WannaCry or Scarab, break users computer down or encrypt all files and get a profit from users by decrypting encrypted files.[3]
 In recent years, the cryptocurrency has become an issue, so they foucs on the cryptocurrency.
 
 Starting with Bitcoin of Satoshi Nakamoto in 2009, many the cryptocurrency is made by programer like Ethereum, Ripple, Litecoin, and so one.
@@ -50,16 +50,16 @@ The goal of ‘proof-of-work’ is finding nonce value which makes required zero
 By incrementing nonce in the block, they calculate iteratively to find the value gives the block’s hash the required zero bits.
 the cryptocurrency is a platform supporting electronic transactions without relying on trusted third party.
 All transactions are announced to the public, all users guarantee validation of transaction.
-So users can transact all over the world with minimize a fee and the speed of transaction get fast[2-1].
+So users can transact all over the world with minimize a fee and the speed of transaction get fast[4].
 Besides, the cryptocurrency wallet has advantage, against general bank account.
 Bank account directly linked to the owner’s physical identity but the cryptocurrency wallet can be generated anytime.
-So, it is difficult to find real owner from digital wallet[2-2].
+So, it is difficult to find real owner from digital wallet[5].
 As the cryptocurrency become popular for this reason, many people have mined the cryptocurrency by using the mining programs to make a progit in their computers.
 However, their computers have a problem while the mining programs working with a computer resources which are CPU, GPU, and so on.
-Because a heat which is made by the computer resources have a bad effect on a computers like IC damage or processing speed down[3].
+Because a heat which is made by the computer resources have a bad effect on a computers like IC damage or processing speed down[6].
 Therefore some computer expert give a warning that people should not mine the cryptocurrency in desktop or labtop.
 After taking the advice, the people found ways to do mining without the problems.
-For these reason, a web-based javascript mining codes which mine the cryptocurrency using visitor computer resources on website are developed.
+For these reason, a web-based javascript mining codes which mine the cryptocurrency using visitor computer resources on website are developed
 
 The first javascript mining codes were Jsminer and Bitcoin-plus In 2011.
 they were developed to mine the cryptocurrency instead of advertisement, but they were not used often because they were slow[7].
@@ -68,7 +68,7 @@ Thus, it has been used by many people on their website to mine Monero using visi
 Actually, it is illgal that web administrator mines cryptocurrency using visitor's computer resources without their agreement.
 However. most of sites cheat visitors to mine using clickjacking or mine in background secretly.
 
-To detect these sites, several anti mining programs were developed like Nocoin[4], MinerBlock[5], Coin-Hive Blocker[6].
+To detect these sites, several anti mining programs were developed like Nocoin[8], MinerBlock[9], Coin-Hive Blocker[10].
 these programs are extension in Chrome or Firefox and detect malicious mining sites based on blacklist which have at least 100 domain urls in real-time.
 MinerBlock not only domains blacklist, but also checks DOM element to detect mining sites. Also Coin-Hive Blocker check CPU usage.
 However, these extensions have problems to detect mining sites.
@@ -76,4 +76,16 @@ They basically check the mining site based on the blacklist, so some computer ex
 Also, the experts can bypass the Dom blacklist and CPU usage inspection. So we will explain in detail in chapter 3.
 To prevent a lot of sites from mining, we will develop Chrome extension with domains blacklist that we collected.
 Also, our extension will check DOM elements with dynamic analysis and monitor if CPU usage is exceeded.
-As a result, we propose more powerful extension than existing others.
+As a result, we propose more powerful extension than existing others and will give users a warning.
+
+#Reference
+[1] Understanding the Mirai Botnet
+[2] Monetizing spambot activity and understanding its relation with spambot traffic features
+[3] The rise of ransomware
+[4] Bitcoin: A peer to peer electronic cash system
+[5] SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies
+[6] https://blog.drhack.net/cryptocurrency-mining-damages-laptop-d
+[7] A first look at browser-based cryptojacking
+[8] https://github.com/keraf/NoCoin
+[9] https://github.com/xd4rker/MinerBlock
+[10] https://github.com/andreas0607/CoinHive-blocker
