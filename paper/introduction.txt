@@ -64,14 +64,14 @@ Taking the advice, the people found ways to do mining without the problems.
 A web-based javascript mining codes which mine the cryptocurrency using visitor computer resources on website are developed.
 
 The first javascript mining codes are JSminer and Bitcoin-plus in 2011.
-They were developed to mine cryptocurrencies instead of advertisement, but they were rarely used because of the slow speed compared to GPU or ASIC mining.
-As Monero, a cryptocurrency which has CPU friendly mining code, is launched, CoinHive, a web based mining program, was developed in 2017.
+They were developed to mine cryptocurrencies instead of advertisement, but they weren't often used because of the slow speed compared to GPU or ASIC mining.
+As Monero which is a CPU friendly mined cryptocurrency is launched, a new javascript mining code 'CoinHive' was developed in 2017.
 Thus, it has been used by many people on their website to mine Monero using visitor's resources.
 Actually, it is illgal that web administrator mines cryptocurrency using visitor's computer resources without their agreement.
 However. most of sites cheat visitors to mine using clickjacking or mine in background silently[7].
 
 To detect these sites, several anti mining programs were developed like NOCoin[8], MinerBlock[9], Coin-Hive Blocker[10].
-These programs are extensions in Chrome or Firefox and detect malicious mining sites based on blacklist which have at least 100 domain urls in real-time.
+These programs are extension in Chrome or Firefox and detect malicious mining sites based on blacklist which have at least 100 domain urls in real-time.
 In addition, MinerBlock not only has domains blacklist, but also checks DOM element to detect mining sites. Also Coin-Hive Blocker checks CPU usage.
 However, these extensions have problems to detect mining sites.
 They basically check the mining site based on the blacklist, so some computer experts can bypass them simply by using a domain that is not in the blacklist.
