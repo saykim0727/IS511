@@ -1,10 +1,9 @@
 - introduction
 예전부터 사람들은 다른 사람들의 비밀스러운 개인 정보를 해킹을 통하여 얻고, 이를 블랙마켓에 팔아 돈을 벌었다.
-하지만, 보안에 대한 관심도가 높아짐에 따라 개인정보 유출공격이 더 힘들어졌고, 그 대신에 이익을 창출하기 위한 여러 방법들이 등장하였다.
-예를들어 2016년 인터넷을 폭풍으로 몰아 넣은 미라이 봇넷은 IOT기기를 감염시키고 이를 이용하여 DDOS 공격을 수행하였다. 추후에 미라이 봇넷을 이용한 많은 다른 바이러스가 등장하였다[1-2].
-이렇게 봇넷을 이용하여 공격을 하는 사람이 있는 반면, 봇넷을 필요한 사람에게 대여해줌으로써 이익을 취하는 사람들도 존재하였다[1-3].
+예를들어 2016년 인터넷을 폭풍으로 몰아 넣은 미라이 봇넷은 IOT기기를 감염시키고 이를 이용하여 DDOS 공격을 수행하였다. 추후에 미라이 봇넷을 이용한 많은 다른 바이러스가 등장하였다[1].
+이렇게 봇넷을 이용하여 공격을 하는 사람이 있는 반면, 봇넷을 필요한 사람에게 대여해줌으로써 이익을 취하는 사람들도 존재하였다[2].
 2005년 Trojan.Gpcoder을 시작으로 최근 2017 워너크라이나 스캐럽 처럼 계속해서 이슈가 되고있는 랜섬웨어는
-사용자들의 pc를 사용할 수 없게 하거나 존재하는 모든 파일들을 암호화시키고 이를 복호화해주는 대가로 pc 사용자에게 돈을 받아내는 바이스러다[1-1].
+사용자들의 pc를 사용할 수 없게 하거나 존재하는 모든 파일들을 암호화시키고 이를 복호화해주는 대가로 pc 사용자에게 돈을 받아내는 바이스러다[3].
 최근에는 암호화폐가 이슈화 되기 시작했고 공격자들은 암호화폐로 눈을 돌렸다.
 암호화폐는 2009 사토시 나카모토가 만든 비트코인을 출발로 이더리움이나 리플, 라이트코인 등이 잇따라 등장하기 시작하였다.
 암호화폐는 블록체인이라는 암호학 기술을 바탕으로 중앙집권화된 주체가 없이 설계되어있는 알고리즘대로 만들어진 디지털화폐다[2].
@@ -39,34 +38,37 @@ MinerBlock 플러그인은 블랙리스트 도메인뿐만 아니라 마이닝�
 결과적으로 우리는 기존의 존재하는 여러 안티 마이닝 플러그인보다 훨씬 강력한 플러그인을 제안한다.
 
 From long ago, some people used to get users' personal secret information by hacking and get profits by selling them.
-However, a personal information leakage attack becomes more harder than before because of the high attention on privacy, many ways for a profit are introduced instead of it.
-For example, in 2016, Mirai botnet, that primarily composed of embedded and IoT devices, infects others IoT devices and performs DDoS attack. 
-A number of botnets are introduced following the Mirai[1], some people got a profit by lending or selling the botnets to someone who need them[2].
-Also Ransomware, which has been a hot issue in recent years such as Trojan.Gpcoder in 2005 and recent 2017 WannaCry or Scarab, breaks users' computer down or encrypts all files and extorts money from users by decrypting the encrypted files.[3]
-In recent years, as a cryptocurrency has become an issue, they foucs on it for money.
+However, a personal information leakage attacks become more harder than before because of the high attention on privacy, many ways for a profit are introduced instead of it.
+For example, in 2016, Mirai botnet, which primarily composed of embedded and IoT devices, infects others IoT devices and performs DDoS attack.
+A number of botnets are introduced following the Mirai[1]. some people got a profit by lending or selling the botnets to someone who need them[2].
+Also ransomwares, which has been a hot issue in recent years such as Trojan.Gpcoder in 2005 and recent 2017 WannaCry or Scarab, break users' computer down or encrypts all files and extort money from users by decrypting the encrypted files.[3]
++In recent years, as a cryptocurrency has become an issue, they foucs on it.
 
 Starting with Bitcoin of Satoshi Nakamoto in 2009, many cryptocurrencies are made by programers like Ethereum, Ripple, Litecoin, and so on.
 A cryptocurrency is a kind of electronic currency mined by algorithms using blockchain based on cryptology.
 The mining process is called 'Proof-of-work'.
-The goal of 'Proof-of-work' is finding a nonce value which makes required zero-bits after hashing.
+The goal of 'proof-of-work' is finding a nonce value which makes required zero-bits after hashing.
 By incrementing the value in the block, they calculate iteratively to find the value gives required zero bits after hashing.
+the cryptocurrency is a platform supporting electronic transactions without relying on trusted third party.
 One of the major features of a cryptocurrency is electronic transactions without relying on trusted third party.
-All transaction is announced to the public, all users guarantee the validation of transaction.
+All transactions are announced to the public, all users guarantee the validation of transaction.
 So the users can transact their cryptocurrencies all over the world with a minimized fee and high speed[4].
-Besides, a wallet of cryptocurrency has an advantage against general bank account.
+Besides, a wallet of cryptocurrencies has advantages against general bank account.
 Bank account directly linked to the owner's physical identity, but the cryptocurrency wallet doesn't.
 It can be generated anytime without any authentication, so it is difficult to find the real owner from the digital wallet[5].
-As cryptocurrencies become more popular for these reasons, many people have mined a cryptocurrency by using mining programs in their computers to make a profit.
-However, there is a problem while the mining programs are working with computer resources likes CPU, GPU, and so on.
-Heat emitted by the computer resources has a bad effect on the computers like damage on IC or processing speed slowdown[6].
-Therefore some computer experts warn that people should not mine the cryptocurrency in desktop or labtop.
+As cryptocurrencies become more popular for these reasons, many people have mined cryptocurrencies by using the mining programs in their computers to make a profit.
+*However, there is a problem while the mining programs are working with computer resources likes CPU, GPU, and so on.
+*However, it is a problem that the mining programs are working with computer resources likes CPU, GPU, and so on.
+*Because heat emitted by the computer resources has a bad effect on the computers like damage on IC or processing speed slowdown[6].
+*Heat emitted by the computer resources has a bad effect on the computers like damage on IC or processing speed slowdown[6].
+Therefore some computer expert warn that people should not mine the cryptocurrency in desktop or labtop.
 Taking the advice, the people found ways to do mining without the problems.
-A web-based javascript mining codes which mine the cryptocurrency using visitor computer resources on website are developed.
+For these reason, a web-based javascript mining codes which mine the cryptocurrency using visitor computer resources on website are developed
 
 The first javascript mining codes are JSminer and Bitcoin-plus in 2011.
 They were developed to mine cryptocurrencies instead of advertisement, but they weren't often used because of the slow speed compared to GPU or ASIC mining.
-As Monero which is a CPU friendly mined cryptocurrency is launched, a new javascript mining code 'CoinHive' was developed in 2017.
-Thus, it has been used by many people on their website to mine Monero using visitor's resources.
+As Monero which is a CPU friendly mined cryptocurrency was launched, a new javascript mining code 'CoinHive' was developed in 2017.
+Thus, it has been used by many people on their website to mine Monero using visitor resources.
 Actually, it is illgal that web administrator mines cryptocurrency using visitor's computer resources without their agreement.
 However. most of sites cheat visitors to mine using clickjacking or mine in background silently[7].
 
@@ -75,12 +77,11 @@ These programs are extension in Chrome or Firefox and detect malicious mining si
 In addition, MinerBlock not only has domains blacklist, but also checks DOM element to detect mining sites. Also Coin-Hive Blocker checks CPU usage.
 However, these extensions have problems to detect mining sites.
 They basically check the mining site based on the blacklist, so some computer experts can bypass them simply by using a domain that is not in the blacklist.
-Also, the experts can bypass the DOM blacklist and CPU usage inspection. So we will explain in detail in Section 5-1.
+Also, the experts can bypass the DOM blacklist and CPU usage inspection. So we will explain in detail in chapter 3.
 To prevent a lot of sites from mining, we will develop a Chrome extension with domains blacklist that we collected.
 Also, our extension will check DOM elements with dynamic analysis and monitor if CPU usage is exceeded.
 As a result, we propose more powerful extension than existings and will give users a warning.
 
-#Reference
 [1] Understanding the Mirai Botnet
 [2] Monetizing spambot activity and understanding its relation with spambot traffic features
 [3] The rise of ransomware
