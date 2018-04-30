@@ -15,6 +15,16 @@
     ]
   },
 
+  "content_scripts" : [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js" : ["js/content.js"],
+    "run_at" : "document_start",
+    "all_frames": true
+  }],
+
+  "web_accessible_resources": [
+	"js/customworker.js"
+  ],
   "browser_action": {
     "default_title": "Mining-Blocker",
     "default_icon": "image/main_logo.png"
