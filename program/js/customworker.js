@@ -1,7 +1,7 @@
 var __workers = [];
 __workers.list = [];
 __workers.terminate = function() {
-	wlist.forEach(function (value) {
+	__workers.list.forEach(function (value) {
 		if(typeof value == "object" && value.isRunning == true)
 			value.terminate();
 	});

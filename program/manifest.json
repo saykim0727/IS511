@@ -23,7 +23,8 @@
   }],
 
   "web_accessible_resources": [
-	"js/customworker.js"
+	"js/customworker.js",
+	"js/wsHook.js"
   ],
   "browser_action": {
     "default_title": "Mining-Blocker",

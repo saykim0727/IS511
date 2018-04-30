@@ -27,3 +27,4 @@ var injector = function(){
 };
 
 injector("js/customworker.js",null);
+injector("js/wsHook.js",null);
