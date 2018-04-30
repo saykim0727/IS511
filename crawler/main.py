@@ -2,8 +2,6 @@ import requests
 from selenium import webdriver
 
 
-# 짧은 작업인 만큼 부족한 점이 많으니 이 점 양해 바랍니다.
-
 # 쿠키값을 가져오기 위한 크롬 웹드라이버입니다. 경로를 설정해 주세요.
 driver = webdriver.Chrome('C:\Users\주형\Desktop\crawler\chromedriver.exe')
 
