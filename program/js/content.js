@@ -41,7 +41,7 @@ function onPageMessageListner(event) {
 }
 
 function onBackgroundMessageListener(request, sender, sendResponse) {
-	if(sender.id == "blpjefoemkbbckbdknpakkegoibpdifn" && request.message == "KILL")
+	if(sender.id == chrome.runtime.id && request.message == "KILL")
 		toPage("KILL");
 }
 
@@ -50,6 +50,6 @@ function toPage(text) {
 }
 
 function toExtension(text) {
-	var extensionID = "blpjefoemkbbckbdknpakkegoibpdifn";
+	var extensionID = chrome.runtime.id;
 	chrome.runtime.sendMessage(extensionID, {message:text});
 }
