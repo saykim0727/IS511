@@ -44,30 +44,24 @@ class AutomatedTest:
   def getLogs(self):
     return self.driver.get_log('browser')
 
-  def start(self, urls):
+  def start(self, urls, callback):
     self.init()
 
     for i in urls:
       self.driver.get(i)
-      print self.getLogs()
-      print "------------------"
+      callback(self.getLogs())
 
     self.clean()
-
-  def one(self, url):
-    self.init()
-    self.driver.get(i)
-    log = self.getLogs()
-    self.clean()
-
-    return log
 
 if __name__ == '__main__':
   a = AutomatedTest('/path/to/extension.crx')
+  def output(result):
+    print result
+    print '-' * 64
   a.start([
     'https://www.google.com/',
     'https://www.facebook.com/',
     'https://www.twitter.com/',
     'https://www.naver.com/',
     'https://www.daum.net/'
-  ])
+  ], output)
