@@ -20,7 +20,6 @@ function toggleTab(elm, elIndex) {
         el.style.backgroundColor = '#eee';
         el.style.borderBottom = '1px solid #ccc';
         toggleContainers(elIndex);
-
     });
 }
 });

@@ -23,9 +23,11 @@
   }],
 
   "web_accessible_resources": [
-	"js/customworker.js",
-	"js/wsHook.js"
+	  "js/customworker.js",
+	  "js/wsHook.js",
+    "js/spc.js"
   ],
+
   "browser_action": {
     "default_title": "Mining-Blocker",
     "default_icon": "image/main_logo.png"
@@ -40,7 +42,8 @@
     "webRequest",
     "webRequestBlocking",
     "http://*/*",
-    "https://*/*"
+    "https://*/*",
+    "notifications"
   ],
 
   "author" : "Pigeon"
