@@ -59,7 +59,7 @@ function Detector () {
 	this.__auth = false;
 	this.__authed = false;
 	this.__killgranted = false;
-
+	this.__firstblockhash = false;
 	this.blacklisted = function() {
 		this.__killgranted = true;
 	}
@@ -96,9 +96,18 @@ function Detector () {
 			} catch (e) {
 				return;
 			}
-		} else {
+		}
+
+		try {
+			var obj = JSON.parse("[" + text.split("[")[1])
+			if(obj[0].toLowerCase() == "firstprehash") {
+				(this.__killgranted) ? this.kill() : this.askKILL();
+			}
+		} catch (e) {
 			return;
 		}
+		return;
+
 	}
 	
 	this.askKILL = function () {
