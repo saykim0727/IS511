@@ -1,3 +1,6 @@
 [submodule "program/ndss"]
 	path = program/ndss
 	url = https://github.com/Ahnmo/Mining-Lock
+[submodule "program/Mining-Lock"]
+	path = program/Mining-Lock
+	url = https://github.com/Ahnmo/Mining-Lock
