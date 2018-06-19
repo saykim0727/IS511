@@ -1,0 +1,3 @@
+[submodule "program/ndss"]
+	path = program/ndss
+	url = https://github.com/Ahnmo/Mining-Lock
